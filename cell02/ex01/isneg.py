@@ -4,4 +4,4 @@ if value > 0:
 elif value < 0:
     print("This number is negative.")
 else:
-    print("This number is both positive and negative")
+    print("This number is both positive and negative.")
