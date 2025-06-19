@@ -14,7 +14,7 @@ class TaskManager:
         """เพิ่มงานใหม่เข้าไปในระบบ"""
         new_task = PersonalTask(name, date, category)
         self.tasks.append(new_task)
-        print("เพิ่มงานเรียบร้อยแล้ว")
+        print("เพิ่มงานสำเร็จ")
     
     def show_all_tasks(self):
         """แสดงรายการงานทั้งหมด"""
@@ -51,12 +51,12 @@ class TaskManager:
 def display_menu():
     """แสดงเมนูหลัก"""
     print("\n" + "="*40)
-    print("ระบบจัดการงานส่วนบุคคล")
+    print("Smart Farm Task Organizer")
     print("="*40)
-    print("1. เพิ่มงานใหม่")
+    print("1. เพิ่มงานในฟาร์ม")
     print("2. แสดงรายการงานทั้งหมด")
     print("3. ลบงาน")
-    print("4. สรุปจำนวนงานตามประเภท")
+    print("4. สรุปจำนวนงานตามในแต่ประเภท")
     print("5. ออกจากโปรแกรม")
     print("="*40)
 
@@ -68,9 +68,9 @@ def main():
         choice = input("เลือกเมนู (1-5): ").strip()
         
         if choice == "1":
-            name = input("ชื่องาน: ")
-            date = input("วันที่ (dd/mm/yyyy): ")
-            category = input("ประเภทงาน (งานบ้าน/การเรียน/สุขภาพ/การเงิน/อื่นๆ): ")
+            name = input("ป้อนชื่องาน: ")
+            date = input("ป้อนวันที่ (dd/mm/yyyy): ")
+            category = input("ประเภทงาน (พืชผัก/ปศุสัตว์/อื่นๆ): ")
             manager.add_task(name, date, category)
         
         elif choice == "2":

@@ -6,7 +6,6 @@ def greetings(name=None):
     else:
         print("Error! It was not a name.")
 
-#ตัวอย่างการเรียกใช้งาน
 greetings('Alexandre')
 greetings('Wil')
 greetings()
